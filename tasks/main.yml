@@ -3,7 +3,6 @@
 
 - name: insert iptables template
   template: src=iptables.j2 dest=/etc/network/if-pre-up.d/iptables mode=0751
-  #notify: restart iptables
 
 - name: insert iptables template
   template: src=iptables.up.rules.j2 dest=/etc/iptables.up.rules mode=0644
